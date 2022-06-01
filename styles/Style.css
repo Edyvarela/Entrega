@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/imagens/sep09.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+
+.Branding {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/imagens/5786823.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.bar-btn {
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgb(0, 0, 0, .95);
+    text-align: center;
+    transition: all.5%;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition:all.5% ;
+}
+
+/* .nav-menu li a:hover {
+   background-color:white;
+   padding: 10px;
+   border-radius: 4px;
+   margin: 5px;
+} */
+
+.nav-menu li a {
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: rgb(214, 0, 93);
+    transition: all .3%;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+
+.banner-text {
+    padding: 0 30px;
+    margin-top: 150px;
+    text-align: center;
+    color:aliceblue
+}
+
+.banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.frase {
+    color: aliceblue;
+    font-size: 24px;
+}
+.banner-text h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(214, 0, 93);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.buttons{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button1 {
+    margin: 40px;
+    padding: 10px 30px;
+    background-color: rgb(214, 0, 93);
+    color: aliceblue;
+    border-radius: 16px;
+}
+
+.button1:hover {
+    background-color: aliceblue;
+    color: rgb(214, 0, 93);
+    transition: .5%;
+}
+
+.button2 {
+    margin-right: 40px;
+    padding: 10px 30px;
+    background-color: rgb(214, 0, 93);
+    color: aliceblue;
+    border-radius: 16px;
+}
+.button2:hover {
+    background-color: aliceblue;
+    color: rgb(214, 0, 93);
+    transition: .5%;
+}
+
+.Descripcion {
+    margin-top: 200px;
+}
+
+.imagen-1 {
+    margin-top: 10px;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}   
+
+p{
+    color: black;
+}
+
+.img-empresas {
+    width: auto;
+    height: 25px;
+    margin: auto;
+    padding: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+.img-empresas:hover {
+    background-color: rgb(214, 0, 93);
+    border-radius: 8px;
+   
+}
+
+.box-grid-empresas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+}
+    
+h2 {
+    font-size: 24px;
+    color: rgb(214, 0, 93);
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+
+}
+.fa-brands.fa-facebook {
+   
+    font-size: 50px;
+    color: rgb(214, 0, 93);
+    margin: 5px;
+}
+
+.fa-brands.fa-facebook:hover {
+    color: aliceblue;
+    transform: scale(150%)
+}   
+
+.fa-brands.fa-instagram {
+    
+    font-size: 50px;
+    color: rgb(214, 0, 93);
+    margin: 5px;
+    
+}
+
+.fa-brands.fa-instagram:hover {
+    color: aliceblue;
+    transform: scale(150%)
+}   
+
+.fa-brands.fa-telegram {
+    
+    font-size: 50px;
+    color: rgb(214, 0, 93);
+    margin: 5px;
+}
+
+.fa-brands.fa-telegram:hover {
+    color: aliceblue;
+    transform: scale(150%)
+}   
+
+.fa-brands.fa-tiktok {
+  
+    font-size: 50px;
+    color: rgb(214, 0, 93);
+    margin: 5px;
+}
+
+.fa-brands.fa-tiktok:hover {
+    color: aliceblue;
+    transform: scale(150%)
+}   
+
+.fa-brands.fa-whatsapp {
+   
+    font-size: 50px;
+    color: rgb(214, 0, 93);
+    margin: 5px;
+}
+
+.fa-brands.fa-whatsapp:hover {
+    color: aliceblue;
+    transform: scale(150%)
+}   
+
+.container-footer{
+    padding: 50px;
+    background-color: black;
+}
+.box-grid-redes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.video-arte {
+    
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    width: 100%;
+
+}
+
+.que-hago {
+    padding: 30px;
+    font-size: 24px;
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(214, 0, 93);
+    
+}
+.que-hago h2 {
+  color: rgb(214, 0, 93);
+    
+}
+
+.Profesional{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-left: 50px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display:none;
+    }
+
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a {
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+
+    .banner-text h1 {
+        font-size: 160px;
+        margin-bottom: 50pxp;
+        margin-top: 50px;
+    }
+
+    .banner-text h2 {
+        font-size: 40px;
+        color: rgb(214, 0, 93);
+    }
+
+    h2 {
+        font-size: 40px;
+        color: rgb(214, 0, 93); 
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        animation: bounce;
+        animation-duration: 3s;
+    }
+
+    .Descripcion p {
+        color: black;
+        font-size: 30px;
+    }
+    
+    .imagen-1 {  
+        padding: 10px;
+        align-items: center;    
+        width: 380px;
+        height: 250px;
+        justify-content: center;
+        animation: backInRight;
+        animation-duration: 4s;
+    }
+
+    .box-grid { 
+        background-color: black;
+        display: grid;
+        padding: 5px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-right: 0%;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    
+    }
+
+    .subtitulos {
+        margin-top: 50px;
+        color: rgb(214, 0, 93);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    p {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .img-empresas {
+        width: auto;
+        height: 60px;
+        margin: auto;
+        padding: 10px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+       
+    }
+
+    .img-empresas:hover {
+        background-color: rgb(214, 0, 93);
+        border-radius: 8px;
+       
+    }
+    
+    .box-grid-empresas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-color: white;
+    }
+
+    .box-grid-redes{
+        justify-content: space-between;
+        display: flex;
+        align-items: center
+    }
+
+    .fa-brands.fa-facebook {
+        width: 100px;
+        font-size: 100px;
+        color: rgb(214, 0, 93);
+        margin: 25px;
+    }
+
+    .fa-brands.fa-facebook:hover {
+        color: aliceblue;
+        transform: scale(150%)
+    }
+
+    .fa-brands.fa-instagram {
+        width: 100px;
+        font-size: 100px;
+        color: rgb(214, 0, 93);
+        margin: 25px;
+        
+    }
+
+    .fa-brands.fa-instagram:hover {
+        color: aliceblue;
+        transform: scale(150%)
+    }
+
+    .fa-brands.fa-telegram {
+        width: 100px;
+        font-size: 100px;
+        color: rgb(214, 0, 93);
+        margin: 25px;
+    }
+
+    .fa-brands.fa-telegram:hover {
+        color: aliceblue;
+        transform: scale(150%)
+    }
+
+    .fa-brands.fa-tiktok {
+        width: 100px;
+        font-size: 100px;
+        color: rgb(214, 0, 93);
+        margin: 25px;
+    }
+
+    .fa-brands.fa-tiktok:hover {
+        color: aliceblue;
+        transform: scale(150%)
+    }
+
+    .fa-brands.fa-whatsapp {
+        width: 100px;
+        font-size: 100px;
+        color: rgb(214, 0, 93);
+        margin: 25px;
+    }
+
+    .fa-brands.fa-whatsapp:hover {
+        color: aliceblue;
+        transform: scale(150%)
+    }
+
+    .container-footer{
+        background-color: black;
+    }
+    
+    .Profesional{
+        display: flex;
+        
+    }
+
+    .img-perfil{
+        padding: 10px;
+        height: 500px;
+        width: 500px;
+        background-color: black;
+        border-radius: 16px;
+    }
+    
+
+    .que-hago {
+        padding: 30px;
+        font-size: 35px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .soy-el {
+        font-size: 24px;
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+
+    .box-grid-pages {
+        background-color: black;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .video-arte {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    
+  
+
+  
+    
+   
+    
+  
+   
+   
+}   
