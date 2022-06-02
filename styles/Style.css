@@ -16,7 +16,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background-image: url(/imagens/sep09.jpg);
+    background-image: url(../imagens/sep09.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,7 +26,7 @@ header {
 .Branding {
     width: 100%;
     height: 100vh;
-    background-image: url(/imagens/5786823.jpg);
+    background-image: url(../imagens/5786796.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
