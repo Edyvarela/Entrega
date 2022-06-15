@@ -7,6 +7,7 @@
     list-style: none;
     box-sizing: border-box;
     text-decoration: none;
+
 }
 
 body {
@@ -162,7 +163,7 @@ nav {
 }
 
 .button1 {
-    margin: 40px;
+    margin: 80px;
     padding: 10px 30px;
     background-color: rgb(214, 0, 93);
     color: aliceblue;
@@ -176,7 +177,7 @@ nav {
 }
 
 .button2 {
-    margin-right: 40px;
+    margin: 80px;
     padding: 10px 30px;
     background-color: rgb(214, 0, 93);
     color: aliceblue;
@@ -189,7 +190,9 @@ nav {
 }
 
 .Descripcion {
-    margin-top: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .imagen-1 {
@@ -199,8 +202,10 @@ nav {
     height: auto;
 }   
 
-p{
+.nuestro {
     color: black;
+    margin-bottom: 20px;
+   
 }
 
 .img-empresas {
@@ -219,13 +224,17 @@ p{
    
 }
 
+.box-grid{
+    display: none;
+}
+
 .box-grid-empresas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     background-color: black;
 }
     
@@ -233,16 +242,23 @@ h2 {
     font-size: 24px;
     color: rgb(214, 0, 93);
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
 
 p {
     font-size: 16px;
     color: black;
     text-align: center;
+}
+
+.img-perfil{
+    padding: 25px;
+    width: 500px;
 
 }
+
 .fa-brands.fa-facebook {
    
     font-size: 50px;
@@ -339,10 +355,17 @@ p {
     
 }
 
+.soy-el{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .Profesional{
-    display: flex;
+    margin-top:20px;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
+   
 }
 
 
@@ -359,50 +382,24 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 768px) {
+    .Profesional{
+    
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+               
+    }
     .logo {
         margin-left: 50px;
     }
 
     nav {
         height: 100px;
+        background: radial-gradient(black,transparent);
     }
 
     .bar-btn {
@@ -448,8 +445,8 @@ p {
         font-size: 40px;
         color: rgb(214, 0, 93); 
         text-align: center;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         animation: bounce;
         animation-duration: 3s;
     }
@@ -460,7 +457,7 @@ p {
     }
     
     .imagen-1 {  
-        padding: 10px;
+        padding: 5px;
         align-items: center;    
         width: 380px;
         height: 250px;
@@ -476,8 +473,8 @@ p {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
         margin-top: 50px;
-        margin-left: 0;
-        margin-right: 0%;
+        margin-left: 170px;
+        margin-right: 170px;
         align-items: center;
         justify-content: center;
         justify-items: center;
@@ -497,12 +494,12 @@ p {
     }
 
     .img-empresas {
-        width: auto;
-        height: 60px;
+        width: 150px;
+        height: auto;
         margin: auto;
-        padding: 10px;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        padding: 0px;
+        align-content: center;
+       
        
     }
 
@@ -516,23 +513,29 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr 1fr;
-        gap: 10px;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        gap: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         background-color: white;
+        margin-left: 200px;
+        margin-right: 200px;
     }
 
     .box-grid-redes{
-        justify-content: space-between;
+        margin-left: 200px;
+        margin-right: 200px;
+        justify-content: space-evenly;
         display: flex;
         align-items: center
+        
+        
     }
 
     .fa-brands.fa-facebook {
         width: 100px;
-        font-size: 100px;
+        font-size: 50px;
         color: rgb(214, 0, 93);
-        margin: 25px;
+        margin: 10px;
     }
 
     .fa-brands.fa-facebook:hover {
@@ -542,9 +545,9 @@ p {
 
     .fa-brands.fa-instagram {
         width: 100px;
-        font-size: 100px;
+        font-size: 50px;
         color: rgb(214, 0, 93);
-        margin: 25px;
+        margin: 10px;
         
     }
 
@@ -555,9 +558,9 @@ p {
 
     .fa-brands.fa-telegram {
         width: 100px;
-        font-size: 100px;
+        font-size: 50px;
         color: rgb(214, 0, 93);
-        margin: 25px;
+        margin: 10px;
     }
 
     .fa-brands.fa-telegram:hover {
@@ -567,9 +570,9 @@ p {
 
     .fa-brands.fa-tiktok {
         width: 100px;
-        font-size: 100px;
+        font-size: 50px;
         color: rgb(214, 0, 93);
-        margin: 25px;
+        margin: 10px;
     }
 
     .fa-brands.fa-tiktok:hover {
@@ -579,9 +582,9 @@ p {
 
     .fa-brands.fa-whatsapp {
         width: 100px;
-        font-size: 100px;
+        font-size: 50px;
         color: rgb(214, 0, 93);
-        margin: 25px;
+        margin: 10px;
     }
 
     .fa-brands.fa-whatsapp:hover {
@@ -591,11 +594,6 @@ p {
 
     .container-footer{
         background-color: black;
-    }
-    
-    .Profesional{
-        display: flex;
-        
     }
 
     .img-perfil{
@@ -610,14 +608,13 @@ p {
     .que-hago {
         padding: 30px;
         font-size: 35px;
-        margin-top: 50px;
+        margin-top: 200px;
         text-align: center;
     }
 
     .soy-el {
         font-size: 24px;
-        padding-left: 100px;
-        padding-right: 100px;
+       
 
     }
 

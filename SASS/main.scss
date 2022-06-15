@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,400&display=swap');
 
+
 *{
     padding: 0;
     margin: 0%;
@@ -131,3 +132,56 @@ body{
     }
 }
 
+ body{
+
+  $colores: (
+    base: #000,
+    principal: rgb(214, 0, 93); ,
+    fondo: gray,
+);
+.fondo {
+    background: map-get($colores, fondo);
+    padding: 20px;
+}
+
+.btn {
+  display: inline;
+  width: 200px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.btn--verde {
+  @extend .btn;
+  background-color: green;
+  color: white;
+}
+.btn--black {
+  @extend .btn;
+  background-color: rgb(214, 0, 93);;
+  color: white;
+}
+
+@mixin boton {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #333;
+}
+.boton--danger {
+  @include boton;
+  background-color: rgb(214, 0, 93);;
+}
+
+@mixin boton ($col, $bg) {
+  display: inline-block;
+  padding: 10px;
+  color: $col;
+  background: $bg;
+}
+.boton--alert {
+  @include boton (rgb(214, 0, 93), grey);
+}
+
+ }
