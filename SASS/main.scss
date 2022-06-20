@@ -134,11 +134,12 @@ body{
 
  body{
 
-  $colores: (
+$colores: (
     base: #000,
     principal: rgb(214, 0, 93); ,
     fondo: gray,
 );
+
 .fondo {
     background: map-get($colores, fondo);
     padding: 20px;

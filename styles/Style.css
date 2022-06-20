@@ -454,6 +454,24 @@ p {
     .Descripcion p {
         color: black;
         font-size: 30px;
+        margin-top: 150px;
+
+    }
+
+    .carrusel{
+        display: flex;
+        padding-left: 305px;
+        padding-right: 305px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 600px;
+        width: auto;
+        background-clip: url(https://carontestudio.com/img/f4.mp4);
+/*         background-image: url(https://carontestudio.com/img/f4.mp4);
+ */    }
+
+    .animate__backInRight {
+        margin-top: 50px;
     }
     
     .imagen-1 {  
@@ -506,6 +524,8 @@ p {
     .img-empresas:hover {
         background-color: rgb(214, 0, 93);
         border-radius: 8px;
+     
+      
        
     }
     
@@ -640,6 +660,12 @@ p {
         text-decoration: none;
         
     }
+
+    h4 {
+        text-align: center;
+    }
+
+
 
    
 
