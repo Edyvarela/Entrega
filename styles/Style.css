@@ -177,7 +177,7 @@ nav {
 }
 
 .button2 {
-    margin: 80px;
+    margin: 40px;
     padding: 10px 30px;
     background-color: rgb(214, 0, 93);
     color: aliceblue;
@@ -343,9 +343,9 @@ p {
 }
 
 .que-hago {
-    padding: 30px;
+    padding: 10px;
     font-size: 24px;
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: center;
     color: rgb(214, 0, 93);
     
@@ -356,17 +356,25 @@ p {
 }
 
 .soy-el{
+    color: aliceblue;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .Profesional{
-    margin-top:20px;
+    background-color: black;
+    margin: 0px;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
     align-items: center;
-   
+    display: flex;
 }
+
+h4 {
+    text-align: center
+}
+
+
 
 
 
@@ -384,12 +392,11 @@ p {
 
 @media screen and (min-width: 768px) {
     .Profesional{
-    
         display: flex;
         justify-content: space-evenly;
-        margin-left: 150px;
-        margin-right: 150px;
-        margin-top: 30px;
+        padding-left: 150px;
+        padding-right: 150px;
+        margin-top: 10px;
         margin-bottom: 50px;
                
     }
@@ -462,13 +469,12 @@ p {
         display: flex;
         padding-left: 305px;
         padding-right: 305px;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 150px;
+        margin-bottom: 380px;
         height: 600px;
         width: auto;
         background-clip: url(https://carontestudio.com/img/f4.mp4);
-/*         background-image: url(https://carontestudio.com/img/f4.mp4);
- */    }
+    }
 
     .animate__backInRight {
         margin-top: 50px;
@@ -628,7 +634,7 @@ p {
     .que-hago {
         padding: 30px;
         font-size: 35px;
-        margin-top: 200px;
+        margin-top: 20px;
         text-align: center;
     }
 
@@ -664,18 +670,5 @@ p {
     h4 {
         text-align: center;
     }
-
-
-
-   
-
-  
-
-  
-    
-   
-    
-  
-   
    
 }   
